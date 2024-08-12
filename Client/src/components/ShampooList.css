@@ -1,0 +1,62 @@
+.shampoo-list {
+    display: flex;
+    justify-content: center;
+    margin: 7px;
+    gap: 1rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.shampoo-list:hover {
+    filter: drop-shadow(0 0 5px #646cffaa);
+
+}
+
+.shampoo-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Spacing between cards and the form */
+    justify-content: center;
+  }
+  
+  /* Styling for each card and the form */
+  .shampoo-card,
+  .add-card {
+    flex: 1 1 calc(25% - 20px); /* Adjust the percentage for the card and form width */
+    box-sizing: border-box;
+    max-width: 300px; /* Set a max-width to control the size */
+  }
+  
+  /* Make sure the form is always first */
+  .add-card {
+    background: rgb(193, 39, 42);
+    background: linear-gradient(277deg, rgb(217, 64, 241) 0%, rgb(123, 183, 196) 100%);    border-radius: 10px;
+    order: -1; /* This ensures the form appears first */
+  }
+  
+  .add-card form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-card form input,
+  .add-card form textarea,
+  .add-card form button {
+    margin-bottom: 10px; /* Space between form elements */
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  .add-card form button {
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-card form button:hover {
+    background-color: #555;
+  }
+  

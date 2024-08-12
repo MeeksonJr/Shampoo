@@ -1,0 +1,38 @@
+/* Base styling for the theme toggle button */
+.theme-toggle-button {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Light mode styling */
+  .theme-toggle-button.light {
+    background: rgb(238,174,202);
+    background: linear-gradient(277deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);    border-radius: 10px;
+    color: #000000;
+  }
+  
+  .theme-toggle-button.light:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Dark mode styling */
+  .theme-toggle-button.dark {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  .theme-toggle-button.dark:hover {
+    background-color: #444444;
+  }
+  
+  /* Optional: Focus styling */
+  .theme-toggle-button:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+  }
+  

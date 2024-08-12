@@ -1,0 +1,117 @@
+/* General Styling */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Ensure that the body takes up the full viewport height */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme changes */
+}
+
+/* Container for the app to take up full viewport height */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
+  width: 100%;
+  background-color: #ffffff; /* Default background color for light mode */
+  transition: background-color 0.3s; /* Smooth transition for background color changes */
+}
+
+/* Light Mode Styling */
+body.light-mode .app-container {
+  background: rgb(193, 39, 42);
+  background: linear-gradient(277deg, rgb(217, 64, 241) 0%, rgb(123, 183, 196) 100%);    border-radius: 10px;
+  color: #000;
+}
+
+body.light-mode {
+  background-color: #f0f0f0;
+  color: #000000;
+}
+
+/* Dark Mode Styling */
+body.dark-mode .app-container {
+  background: rgb(238,174,202);
+  background: linear-gradient(277deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);    border-radius: 10px;
+  color: #fff;
+}
+
+body.dark-mode {
+  background: rgb(193, 39, 42);
+  background: linear-gradient(277deg, rgb(217, 64, 241) 0%, rgb(123, 183, 196) 100%);    border-radius: 10px;
+  color: #ffffff;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  transition: background-color all 0.9s ease-in-out; /* Smooth transition for navbar background color */
+}
+
+body.dark-mode .navbar {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+.footer {
+  padding: 1rem;
+  background-color: #f8f8f8;
+  transition: background-color 0.3s; /* Smooth transition for footer background color */
+}
+
+body.dark-mode .footer {
+  background-color: #000000;
+  color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+body.light-mode .footer {
+  background-color: #f8f8f8;
+  color: #000000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Button Styling */
+.theme-toggle-button {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 0.25em;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-toggle-button.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.theme-toggle-button.dark {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.theme-toggle-button:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+/* Optional: Focus styling */
+.theme-toggle-button:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}

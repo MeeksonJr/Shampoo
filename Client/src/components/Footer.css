@@ -1,0 +1,29 @@
+.footer {
+    background-color: #f8f8f8;
+    padding: 0 16px;
+    text-align: center;
+  }
+  
+  .social-icons a {
+    margin: 0 0.5rem;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: all 0.7s ease-in-out;
+  }
+  
+  .social-icons a:hover {
+    color: #007bff;
+  }
+  
+  body.dark-mode .social-icons a {
+    color: #f8f8f8;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  body.light-mode .social-icons a {
+    color: #000000;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
