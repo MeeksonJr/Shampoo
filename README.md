@@ -18,7 +18,7 @@ Clone the repository:
 bash
 Copy code
 ```
-git clone [https://github.com/your-username/NotePad.git](https://github.com/MeeksonJr/Shampoo.git)
+git clone https://github.com/MeeksonJr/Shampoo.git
 
 Navigate to the project directory:
 
