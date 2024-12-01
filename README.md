@@ -17,31 +17,26 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/NotePad.git
+```
+git clone [https://github.com/your-username/NotePad.git](https://github.com/MeeksonJr/Shampoo.git)
+
 Navigate to the project directory:
 
-bash
-Copy code
 cd NotePad
 Install dependencies for both client and server:
 
-bash
-Copy code
 cd client
 npm install
+
+Start the backend server:
 cd ../server
 npm install
-Start the backend server:
+node server.js
 
-bash
-Copy code
-npm run dev
 Start the frontend application:
-
-bash
-Copy code
 cd ../client
 npm run dev
+```
 Access the application:
 
 Open your browser and navigate to http://localhost:3000 (or your configured port).
